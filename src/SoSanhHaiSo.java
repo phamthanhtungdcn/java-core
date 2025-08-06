@@ -11,16 +11,16 @@ public class SoSanhHaiSo {
 
         while (true){
             try{
-                System.out.println("Nhap so thu nhat: ");
+                System.out.print("Nhap so thu nhat: ");
                 soThuNhat = scanner.nextDouble();
 
-                System.out.println("Nhap so thu nhi: ");
+                System.out.print("Nhap so thu nhi: ");
                 soThuNhi = scanner.nextDouble();
 
-                if(soThuNhat != soThuNhi){
-                    System.out.println("Hai so khong bang nhau");
-                } else {
+                if(soThuNhat == soThuNhi){
                     System.out.println("Hai so bang nhau");
+                } else {
+                    System.out.println("Hai so khong bang nhau");
 
                     if(soThuNhat > soThuNhi){
                         System.out.println("So thu nhat lon hon so thu hai");
