@@ -21,21 +21,21 @@ public class SoSanhHaiSo {
                     System.out.println("Hai so khong bang nhau");
                 } else {
                     System.out.println("Hai so bang nhau");
-                    break;
-                }
 
-                if(soThuNhat > soThuNhi){
-                    System.out.println("So thu nhat lon hon so thu hai");
-                } else {
-                    System.out.println("So thu nhat nho hon so thu hai");
+                    if(soThuNhat > soThuNhi){
+                        System.out.println("So thu nhat lon hon so thu hai");
+                    } else {
+                        System.out.println("So thu nhat nho hon so thu hai");
+                    }
                 }
-
                 break;
 
             } catch (InputMismatchException e){
-                System.out.println("❌ Vui long nhap so.");
+                System.out.println("❌ Vui long nhap dung dinh dang so.");
                 scanner.nextLine();
             }
         }
+
+        scanner.close();
     }
 }
